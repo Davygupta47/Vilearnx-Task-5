@@ -1,107 +1,210 @@
-VilearnX offers a dynamic internship experience, providing students with hands-on exposure to AI-driven projects, mentorship from industry experts, and a collaborative environment to develop skills and build a strong professional network.
+# AAPL Stock Market PredictorVilearnX offers a dynamic internship experience, providing students with hands-on exposure to AI-driven projects, mentorship from industry experts, and a collaborative environment to develop skills and build a strong professional network.
+
 Dear VilearnX Team,
-        I wanted to take a moment to express my sincere gratitude for the opportunity to intern at VilearnX. I am so grateful to have had the chance to work alongside, and I have learned so much from each one of the given tasks for DATA ANALYTICS and MACHINE LEARNING.
 
-Thanking you,
+A comprehensive stock market analysis and prediction system for Apple Inc. (AAPL) using Python and machine learning techniques. This project demonstrates data fetching, exploratory data analysis, ARIMA modeling, and LSTM neural network implementation for stock price prediction.        I wanted to take a moment to express my sincere gratitude for the opportunity to intern at VilearnX. I am so grateful to have had the chance to work alongside, and I have learned so much from each one of the given tasks for DATA ANALYTICS and MACHINE LEARNING.
+
+
+
+## FeaturesThanking you,
+
 Dwaipayan Dasgupta
-# Vilearnx-Task-5
-THIS particular Task is a comprehensive stock market analysis and prediction system using Python and various libraries such as Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, Scikit-learn, and TensorFlow. The project focuses on analyzing and predicting the stock price of Apple Inc. (AAPL) using historical data from Yahoo Finance.
-This repository contains a comprehensive stock market analysis and prediction system using Python and various libraries such as Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, Scikit-learn, and TensorFlow. The project focuses on analyzing and predicting the stock price of Apple Inc. (AAPL) using historical data from Yahoo Finance. The project includes data fetching, data preprocessing, exploratory data analysis, ARIMA model implementation, LSTM model implementation, model evaluation, and forecasting. The project provides a comprehensive analysis of the stock price of Apple Inc. (AAPL) and demonstrates the use of LSTM neural networks for stock price prediction.
 
+- **Data Fetching**: Automated retrieval of historical stock data from Yahoo Finance# Vilearnx-Task-5
 
-OUTPUT:
+- **Exploratory Data Analysis**: Comprehensive analysis including price trends, returns distribution, correlation analysis, moving averages, and volatilityTHIS particular Task is a comprehensive stock market analysis and prediction system using Python and various libraries such as Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, Scikit-learn, and TensorFlow. The project focuses on analyzing and predicting the stock price of Apple Inc. (AAPL) using historical data from Yahoo Finance.
+
+- **ARIMA Modeling**: Time series forecasting using ARIMA (AutoRegressive Integrated Moving Average)This repository contains a comprehensive stock market analysis and prediction system using Python and various libraries such as Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, Scikit-learn, and TensorFlow. The project focuses on analyzing and predicting the stock price of Apple Inc. (AAPL) using historical data from Yahoo Finance. The project includes data fetching, data preprocessing, exploratory data analysis, ARIMA model implementation, LSTM model implementation, model evaluation, and forecasting. The project provides a comprehensive analysis of the stock price of Apple Inc. (AAPL) and demonstrates the use of LSTM neural networks for stock price prediction.
+
+- **LSTM Neural Network**: Deep learning approach for stock price prediction using Long Short-Term Memory networks
+
+- **Visualization**: Multiple plots for data insights and model performance
+
+- **Model Evaluation**: RMSE metrics for both training and testing datasetsOUTPUT:
+
 <class 'pandas.core.frame.DataFrame'>
-DatetimeIndex: 1006 entries, 2020-01-02 to 2023-12-29
+
+## Technologies UsedDatetimeIndex: 1006 entries, 2020-01-02 to 2023-12-29
+
 Data columns (total 6 columns):
- #   Column     Non-Null Count  Dtype  
----  ------     --------------  -----  
- 0   Open       1006 non-null   float64
- 1   High       1006 non-null   float64
- 2   Low        1006 non-null   float64
- 3   Close      1006 non-null   float64
- 4   Adj Close  1006 non-null   float64
+
+- Python #   Column     Non-Null Count  Dtype  
+
+- Pandas & NumPy (Data manipulation)---  ------     --------------  -----  
+
+- Matplotlib & Seaborn (Visualization) 0   Open       1006 non-null   float64
+
+- Statsmodels (ARIMA modeling) 1   High       1006 non-null   float64
+
+- Scikit-learn (Metrics and preprocessing) 2   Low        1006 non-null   float64
+
+- TensorFlow/Keras (LSTM implementation) 3   Close      1006 non-null   float64
+
+- YFinance (Data fetching) 4   Adj Close  1006 non-null   float64
+
  5   Volume     1006 non-null   int64  
-dtypes: float64(5), int64(1)
+
+## Installationdtypes: float64(5), int64(1)
+
 memory usage: 55.0 KB
-Number of duplicate rows: 0
-RMSE: 30.83889864818401
-                               SARIMAX Results                                
-==============================================================================
-Dep. Variable:                  Close   No. Observations:                  804
+
+1. Clone the repository:Number of duplicate rows: 0
+
+```bashRMSE: 30.83889864818401
+
+git clone https://github.com/Davygupta47/Vilearnx-Task-5.git                               SARIMAX Results                                
+
+cd Vilearnx-Task-5==============================================================================
+
+```Dep. Variable:                  Close   No. Observations:                  804
+
 Model:                 ARIMA(1, 1, 1)   Log Likelihood               -1955.393
-Date:                Mon, 16 Sep 2024   AIC                           3916.786
-Time:                        17:12:01   BIC                           3930.851
-Sample:                             0   HQIC                          3922.188
-                                - 804                                         
+
+2. Install required packages:Date:                Mon, 16 Sep 2024   AIC                           3916.786
+
+```bashTime:                        17:12:01   BIC                           3930.851
+
+pip install -r requirements.txtSample:                             0   HQIC                          3922.188
+
+```                                - 804                                         
+
 Covariance Type:                  opg                                         
-==============================================================================
+
+## Usage==============================================================================
+
                  coef    std err          z      P>|z|      [0.025      0.975]
-------------------------------------------------------------------------------
-ar.L1          0.3818      0.383      0.998      0.318      -0.368       1.132
-ma.L1         -0.4442      0.374     -1.187      0.235      -1.178       0.289
-sigma2         7.6314      0.298     25.568      0.000       7.046       8.216
+
+1. Open the Jupyter notebook:------------------------------------------------------------------------------
+
+```bashar.L1          0.3818      0.383      0.998      0.318      -0.368       1.132
+
+jupyter notebook src/AAPL_Stock_Predictor.ipynbma.L1         -0.4442      0.374     -1.187      0.235      -1.178       0.289
+
+```sigma2         7.6314      0.298     25.568      0.000       7.046       8.216
+
 ===================================================================================
-Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):                64.14
-Prob(Q):                              1.00   Prob(JB):                         0.00
-Heteroskedasticity (H):               1.56   Skew:                            -0.05
-Prob(H) (two-sided):                  0.00   Kurtosis:                         4.38
-===================================================================================
+
+2. Run all cells in sequence to:Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):                64.14
+
+   - Fetch AAPL stock data from 2020-01-01 to 2023-12-31Prob(Q):                              1.00   Prob(JB):                         0.00
+
+   - Perform exploratory data analysisHeteroskedasticity (H):               1.56   Skew:                            -0.05
+
+   - Train and evaluate ARIMA modelProb(H) (two-sided):                  0.00   Kurtosis:                         4.38
+
+   - Train and evaluate LSTM model===================================================================================
+
+   - Generate predictions for the next trading day
 
 Warnings:
-[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+
+## Project Structure[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+
 /usr/local/lib/python3.10/dist-packages/keras/src/layers/rnn/rnn.py:204: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
-  super().__init__(**kwargs)
-Epoch 1/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 13s 112ms/step - loss: 0.0891 - val_loss: 0.0089
-Epoch 2/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 84ms/step - loss: 0.0154 - val_loss: 0.0046
-Epoch 3/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 124ms/step - loss: 0.0082 - val_loss: 0.0053
-Epoch 4/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 6s 169ms/step - loss: 0.0079 - val_loss: 0.0041
+
+```  super().__init__(**kwargs)
+
+AAPL-Stock-Market-Predictor/Epoch 1/100
+
+├── src/21/21 ━━━━━━━━━━━━━━━━━━━━ 13s 112ms/step - loss: 0.0891 - val_loss: 0.0089
+
+│   └── AAPL_Stock_Predictor.ipynb  # Main analysis notebookEpoch 2/100
+
+├── requirements.txt                 # Python dependencies21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 84ms/step - loss: 0.0154 - val_loss: 0.0046
+
+├── LICENSE                          # MIT LicenseEpoch 3/100
+
+├── .gitignore                      # Git ignore rules21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 124ms/step - loss: 0.0082 - val_loss: 0.0053
+
+└── README.md                       # Project documentationEpoch 4/100
+
+```21/21 ━━━━━━━━━━━━━━━━━━━━ 6s 169ms/step - loss: 0.0079 - val_loss: 0.0041
+
 Epoch 5/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 6s 202ms/step - loss: 0.0071 - val_loss: 0.0047
+
+## Results21/21 ━━━━━━━━━━━━━━━━━━━━ 6s 202ms/step - loss: 0.0071 - val_loss: 0.0047
+
 Epoch 6/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 4s 200ms/step - loss: 0.0077 - val_loss: 0.0040
-Epoch 7/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 5s 190ms/step - loss: 0.0069 - val_loss: 0.0049
-Epoch 8/100
+
+### Data Overview21/21 ━━━━━━━━━━━━━━━━━━━━ 4s 200ms/step - loss: 0.0077 - val_loss: 0.0040
+
+- Dataset: AAPL stock data (2020-01-01 to 2023-12-29)Epoch 7/100
+
+- Total records: 1006 entries21/21 ━━━━━━━━━━━━━━━━━━━━ 5s 190ms/step - loss: 0.0069 - val_loss: 0.0049
+
+- No missing values or duplicatesEpoch 8/100
+
 21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 126ms/step - loss: 0.0081 - val_loss: 0.0044
-Epoch 9/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 83ms/step - loss: 0.0067 - val_loss: 0.0035
-Epoch 10/100
+
+### ARIMA Model PerformanceEpoch 9/100
+
+- RMSE: 30.8421/21 ━━━━━━━━━━━━━━━━━━━━ 2s 83ms/step - loss: 0.0067 - val_loss: 0.0035
+
+- Model: ARIMA(1,1,1)Epoch 10/100
+
 21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 130ms/step - loss: 0.0070 - val_loss: 0.0042
-Epoch 11/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 4s 82ms/step - loss: 0.0065 - val_loss: 0.0048
-Epoch 12/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 85ms/step - loss: 0.0068 - val_loss: 0.0032
+
+### LSTM Model PerformanceEpoch 11/100
+
+- Train RMSE: 4.6821/21 ━━━━━━━━━━━━━━━━━━━━ 4s 82ms/step - loss: 0.0065 - val_loss: 0.0048
+
+- Test RMSE: 10.35Epoch 12/100
+
+- Next day prediction: ~$192.68 (as of last run)21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 85ms/step - loss: 0.0068 - val_loss: 0.0032
+
 Epoch 13/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 83ms/step - loss: 0.0067 - val_loss: 0.0078
-Epoch 14/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 97ms/step - loss: 0.0078 - val_loss: 0.0048
-Epoch 15/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 130ms/step - loss: 0.0073 - val_loss: 0.0030
-Epoch 16/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 84ms/step - loss: 0.0063 - val_loss: 0.0033
+
+### Sample Visualizations21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 83ms/step - loss: 0.0067 - val_loss: 0.0078
+
+- Stock price time seriesEpoch 14/100
+
+- Daily returns distribution21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 97ms/step - loss: 0.0078 - val_loss: 0.0048
+
+- Correlation heatmapEpoch 15/100
+
+- Moving averages (50-day, 200-day)21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 130ms/step - loss: 0.0073 - val_loss: 0.0030
+
+- Volatility analysisEpoch 16/100
+
+- Model prediction plots21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 84ms/step - loss: 0.0063 - val_loss: 0.0033
+
 Epoch 17/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 82ms/step - loss: 0.0061 - val_loss: 0.0028
+
+## Contributing21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 82ms/step - loss: 0.0061 - val_loss: 0.0028
+
 Epoch 18/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 84ms/step - loss: 0.0057 - val_loss: 0.0029
+
+This project was completed as part of the VilearnX internship program. For suggestions or improvements, please open an issue or submit a pull request.21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 84ms/step - loss: 0.0057 - val_loss: 0.0029
+
 Epoch 19/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 85ms/step - loss: 0.0052 - val_loss: 0.0027
+
+## License21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 85ms/step - loss: 0.0052 - val_loss: 0.0027
+
 Epoch 20/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 82ms/step - loss: 0.0052 - val_loss: 0.0030
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 82ms/step - loss: 0.0052 - val_loss: 0.0030
+
 Epoch 21/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 115ms/step - loss: 0.0053 - val_loss: 0.0038
+
+## Acknowledgments21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 115ms/step - loss: 0.0053 - val_loss: 0.0038
+
 Epoch 22/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 4s 167ms/step - loss: 0.0060 - val_loss: 0.0029
-Epoch 23/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 81ms/step - loss: 0.0058 - val_loss: 0.0040
+
+- VilearnX for the internship opportunity21/21 ━━━━━━━━━━━━━━━━━━━━ 4s 167ms/step - loss: 0.0060 - val_loss: 0.0029
+
+- Yahoo Finance for stock dataEpoch 23/100
+
+- Open-source Python libraries used in this project21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 81ms/step - loss: 0.0058 - val_loss: 0.0040
+
 Epoch 24/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 83ms/step - loss: 0.0051 - val_loss: 0.0023
+
+---21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 83ms/step - loss: 0.0051 - val_loss: 0.0023
+
 Epoch 25/100
-21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 81ms/step - loss: 0.0051 - val_loss: 0.0023
-Epoch 26/100
+
+**Author**: Dwaipayan Dasgupta21/21 ━━━━━━━━━━━━━━━━━━━━ 2s 81ms/step - loss: 0.0051 - val_loss: 0.0023
+
+**Internship**: VilearnX Data Analytics and Machine LearningEpoch 26/100
 21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 100ms/step - loss: 0.0050 - val_loss: 0.0022
 Epoch 27/100
 21/21 ━━━━━━━━━━━━━━━━━━━━ 3s 133ms/step - loss: 0.0055 - val_loss: 0.0022
