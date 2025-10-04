@@ -1,4 +1,4 @@
-# AAPL Stock Market PredictorVilearnX offers a dynamic internship experience, providing students with hands-on exposure to AI-driven projects, mentorship from industry experts, and a collaborative environment to develop skills and build a strong professional network.
+# AAPL Stock Market Predictor. VilearnX offers a dynamic internship experience, providing students with hands-on exposure to AI-driven projects, mentorship from industry experts, and a collaborative environment to develop skills and build a strong professional network.
 
 Dear VilearnX Team,
 
